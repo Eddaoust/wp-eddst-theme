@@ -3,3 +3,44 @@ Theme Name: eddst - portfolio
 Author: edmond daoust
 Description: Portfolio one page
 */
+
+/************** FONTS ***************/
+
+@font-face {
+  font-family: "Gloria Hallelujah";
+  src: url("assets/fonts/gloria-hallelujah/GloriaHallelujah.ttf");
+}
+
+@font-face {
+  font-family: "Catamaran Regular";
+  src: url("assets/fonts/catamaran/Catamaran-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Catamaran Bold";
+  src: url("assets/fonts/catamaran/Catamaran-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Catamaran Thin";
+  src: url("assets/fonts/catamaran/Catamaran-Thin.ttf");
+}
+
+/************** HEADER ***************/
+
+header nav h1 {
+  font-family: "Gloria Hallelujah" !important;
+  color: #d8ae3b!important;
+  font-size: 48px!important;
+  line-height: 70px!important;
+}
+
+header ul {
+  font-family: "Catamaran Regular"!important;
+  font-size: 18px!important;
+  line-height: 70px!important;
+}
+
+header li a:hover {
+  color: #d8ae3b!important;
+}
