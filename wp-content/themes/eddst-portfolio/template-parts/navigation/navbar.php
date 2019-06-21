@@ -5,6 +5,7 @@
     </button>
     <?php
     wp_nav_menu([
+        'theme_location' => 'navbar',
         'container'       => 'div',
         'container_class' => 'collapse navbar-collapse',
         'container_id'    => 'navbarTogglerDemo01',

@@ -43,4 +43,11 @@ header ul {
 
 header li a:hover {
   color: #d8ae3b!important;
+  text-decoration: none;
+}
+
+header li a {
+  text-decoration: none;
+  color: inherit;
+  color: white;
 }
