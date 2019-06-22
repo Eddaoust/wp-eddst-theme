@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html <?php language_attributes() ?>>
 <head>
     <?php wp_head(); ?>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -9,13 +9,24 @@
     <title><?php wp_title(); ?></title>
 </head>
 <body <?php body_class(); ?>>
+<?php wp_body_open() ?>
     <header>
         <?php get_template_part('template-parts/navigation/navbar') ?>
-        <div id="welcome" class="container">
+    </header>
+    <div id="welcome">
+        <div class="container">
             <div class="row">
-
+                <?php if(have_posts()) : ?>
+                    <?php while(have_posts())  : the_post(); ?>
+                        <div class="col-lg-6 col-sm-12 col-xs-12"></div>
+                        <div class="col-lg-6 col-sm-12 col-xs-12">
+                            <?php the_content(); ?>
+                        </div>
+                    <?php endwhile; ?>
+                <?php endif; ?>
             </div>
         </div>
-    </header>
+    </div>
+
 
 

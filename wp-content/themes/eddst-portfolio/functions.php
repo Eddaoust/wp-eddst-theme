@@ -12,6 +12,8 @@ add_action('wp_enqueue_scripts', 'load_stylesheets');
 
 // Add Menu control on apparence
 add_theme_support('menus');
+// Add image mise en avant
+add_theme_support('post-thumbnails');
 
 // Can choose the location in menu
 register_nav_menus([

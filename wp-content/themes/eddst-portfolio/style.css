@@ -50,4 +50,50 @@ header li a {
   text-decoration: none;
   color: inherit;
   color: white;
+  margin: 10px;
+}
+
+/************** WELCOME ***************/
+
+#welcome h1 {
+  font-size: 72px;
+  font-family: "Catamaran Thin";
+  color: white;
+  margin-top: 140px;
+}
+
+#welcome h1 strong {
+  font-family: "Catamaran Bold";
+}
+
+#welcome h1 span {
+  font-family: "Gloria Hallelujah";
+  color: #d8ae3b;
+}
+
+#welcome h6 {
+  font-size: 30px;
+  font-family: "Catamaran Thin";
+  color: white;
+}
+
+#welcome {
+  height: /*700px*/100vh;
+  background: url("assets/img/calque_1.png")no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+@media (max-width: 992px) {
+  #welcome {
+    background: url("assets/img/calque_1_sm_xs.png")no-repeat center;
+    background-size: cover;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  #welcome h1 {
+    font-size: 40px;
+  }
 }
