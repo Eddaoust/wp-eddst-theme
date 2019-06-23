@@ -16,14 +16,14 @@
     <div id="welcome">
         <div class="container">
             <div class="row">
-                <?php if(have_posts()) : ?>
-                    <?php while(have_posts())  : the_post(); ?>
-                        <div class="col-lg-6 col-sm-12 col-xs-12"></div>
-                        <div class="col-lg-6 col-sm-12 col-xs-12">
-                            <?php the_content(); ?>
-                        </div>
-                    <?php endwhile; ?>
-                <?php endif; ?>
+                <div class="col-lg-6 col-sm-12 col-xs-12"></div>
+                <div class="col-lg-6 col-sm-12 col-xs-12">
+                    <h1><strong>Hi, </strong>my name is <span><?php echo get_post_meta(get_the_ID(), 'nickname', true) ?></span></h1>
+                </div>
+                <div class="col-lg-6 col-sm-12 col-xs-12"></div>
+                <div class="col-lg-6 col-sm-12 col-xs-12">
+                    <h6><?php echo get_post_meta(get_the_ID(), 'job', true) ?></h6>
+                </div>
             </div>
         </div>
     </div>

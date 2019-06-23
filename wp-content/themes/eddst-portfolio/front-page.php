@@ -13,6 +13,7 @@ foreach ($sections as $key => $section) :
 
 <section id="<?php echo lcfirst(get_the_title($section->ID)); ?>" <?php post_class('', $section->ID); ?>>
     <h1><?php echo get_the_title($section->ID); ?></h1>
+    <div><?php echo get_the_content($section->ID); ?></div>
 </section>
 
 <?php endforeach; ?>
