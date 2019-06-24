@@ -8,23 +8,16 @@
                 <?php echo $section->post_content; ?>
                 <h6><?php echo get_post_meta(get_the_ID(), 'fullname', true); ?></h6>
                 <div class="container-fluid ">
-                    <div class="row">
-                        <div class="col-lg-3 col-sm-3 col-xs-3">
-                            <a href="https://twitter.com/edmonddaoust" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        </div>
-                        <div class="col-lg-3 col-sm-3 col-xs-3">
-                            <a href="https://www.linkedin.com/in/edmond-daoust-09431b86/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </div>
-                        <div class="col-lg-3 col-sm-3 col-xs-3">
-                            <a href="https://github.com/Eddaoust" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </div>
-                        <div class="col-lg-3 col-sm-3 col-xs-3">
-                            <a href="https://www.freecodecamp.org/eddaoust" target="_blank"><i class="fa fa-free-code-camp" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
+                    <?php
+                    wp_nav_menu([
+                        'theme_location' => 'weblink',
+                        'menu_class' => 'row justify-content-between',
+
+                    ]);
+                    ?>
                 </div>
             </div>
-            <div class="col-lg-5 col-sm-12 col-xs-12">
+            <div class="col-lg-5 col-sm-12 col-xs-12 about-wrap">
                 <?php echo get_the_post_thumbnail($section->ID); ?>
             </div>
         </div>
