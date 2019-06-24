@@ -101,3 +101,75 @@ header li a {
     font-size: 40px;
   }
 }
+
+/************** ABOUT ***************/
+
+#about {
+  height: 850px;
+}
+
+#about p {
+  font-family: "Catamaran Regular";
+  text-align: justify;
+  font-size: 18px;
+  margin-top: 65px;
+}
+
+#about p:nth-of-type(2) {
+  color: #919191;
+}
+
+#about h6 {
+  font-family: "Gloria Hallelujah";
+  font-size: 30px;
+  padding-top: 60px;
+  margin-bottom: 280px;
+}
+
+#about a i {
+  font-size: 40px;
+  width: 60px;
+  height: 60px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 90px;
+  transition-duration: 0.5s;
+  transition-property: background-color;
+}
+
+#about a i:hover {
+  background-color: #d8ae3b;
+}
+
+#about h1 {
+  font-family: "Catamaran Bold";
+  font-size: 48px;
+  margin-top: 700px;
+}
+
+#about h1 span {
+  color: #d8ae3b;
+}
+
+@media (max-width: 992px) {
+  #about h1 {
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  #about h6 {
+    margin-bottom: 50px;
+  }
+
+  #about img {
+    content: url("img/calque_2_sm_xs.png");
+    margin-top: 30px;
+    padding-left: 80px;
+  }
+
+  #about {
+    height: 1000px;
+  }
+}
