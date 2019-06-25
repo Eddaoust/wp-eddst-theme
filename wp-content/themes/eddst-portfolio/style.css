@@ -164,6 +164,7 @@ header li a {
 
 #menu-weblink {
   list-style-type: none;
+  padding: 0;
 }
 
 @media (max-width: 992px) {
@@ -176,9 +177,18 @@ header li a {
     margin-bottom: 50px;
   }
 
-  #about img {
-    margin-top: 30px;
-    padding-left: 80px;
+  .about-wrap {
+    height: 150px;
+    overflow: hidden;
+  }
+
+  .about-wrap img {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width: 100%;
+    height: auto;
   }
 
   #about {
