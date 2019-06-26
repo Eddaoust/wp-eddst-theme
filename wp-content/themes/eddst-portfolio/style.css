@@ -105,7 +105,7 @@ header li a {
 /************** ABOUT ***************/
 
 #about {
-  height: 850px;
+  height: 100%;
 }
 
 #about p {
@@ -137,7 +137,7 @@ header li a {
 }
 
 .about-wrap {
-  height: 850px;
+  height: 100%;
 }
 
 #about img {
@@ -194,4 +194,45 @@ header li a {
   #about {
     height: 1000px;
   }
+}
+
+/************** SKILLS ***************/
+
+#skills {
+  background-color: #212121;
+  height: 750px;
+}
+
+#skills h1 {
+  font-family: "Catamaran Bold";
+  font-size: 48px;
+  color: #d8ae3b;
+  margin-top: 600px;
+}
+
+#skills h1 span {
+  color: white;
+}
+
+#skills p {
+  font-family: "Catamaran Bold";
+  font-size: 18px;
+  color: white;
+  padding-top: 20px;
+}
+
+.barre {
+  height: 50px;
+  width: 400px;
+  background-color: #636363;
+}
+
+.barre div {
+  height: 50px;
+  width: 0px;
+  background-color: #d8ae3b;
+}
+
+#first-barre {
+  margin-top: 20px;
 }

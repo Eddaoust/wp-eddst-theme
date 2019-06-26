@@ -14,12 +14,10 @@ foreach ($sections as $key => $section) :
         require_once 'inc/about.inc.php';
 ?>
 
+<?php elseif (lcfirst(get_the_title($section->ID)) == 'skills'):
+        require_once 'inc/skills.inc.php';
+?>
 
-<?php elseif (lcfirst(get_the_title($section->ID)) == 'skills'): ?>
-
-    <section id="<?php echo lcfirst(get_the_title($section->ID)); ?>" <?php post_class('', $section->ID); ?>>
-        <h1><?php echo get_the_title($section->ID); ?></h1>
-    </section>
 
 <?php elseif (lcfirst(get_the_title($section->ID)) == 'story'): ?>
 

@@ -1,5 +1,6 @@
 <?php
 
+// Add CSS
 function load_stylesheets() {
     wp_register_style('bootstrap', get_template_directory_uri().'/assets/css/bootstrap/bootstrap.css');
     wp_enqueue_style('bootstrap');
@@ -9,6 +10,7 @@ function load_stylesheets() {
 }
 add_action('wp_enqueue_scripts', 'load_stylesheets');
 
+// Add JS
 function load_js() {
     wp_deregister_script('jquery-core');
     wp_register_script('jquery-core', get_template_directory_uri().'/assets/js/jquery.js', false, '3.4.1', true);
