@@ -236,3 +236,8 @@ header li a {
 #first-barre {
   margin-top: 20px;
 }
+
+.thumb-ed {
+  position: relative;
+  right: 25px;
+}

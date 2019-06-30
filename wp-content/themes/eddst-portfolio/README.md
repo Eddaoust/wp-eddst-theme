@@ -27,6 +27,14 @@
         * url: your url link
         * text: the html code from fontawesome like this ```<i class="fab fa-twitter"></i>```
         * Select the location 'Weblink'
+        
+### Skills section
+
+* Add one thumbnail
+* Skills progression barre:
+    * Add custom fields (6 Maximum)
+    * Key: Name of skill
+    * Value: number between 0 - 100
 
 ## Infos
 

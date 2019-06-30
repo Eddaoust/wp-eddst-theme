@@ -19,6 +19,7 @@ function load_js() {
     wp_enqueue_script('jquery-core', get_template_directory_uri().'/assets/js/jquery.js', false, '3.4.1', true);
     wp_enqueue_script('jquery-migrate', get_template_directory_uri().'/assets/js/jquery-migrate.js', false, '3.4.1', true);
     wp_enqueue_script('skills', get_template_directory_uri().'/assets/js/skills.js', false, '1.0', true);
+    wp_localize_script('skills', 'ajaxurl', [admin_url( 'admin-ajax.php' )]);
 }
 add_action('wp_enqueue_scripts', 'load_js');
 
@@ -32,3 +33,19 @@ register_nav_menus([
     'navbar' => __('Navbar', 'theme'),
     'weblink' => __('Web-link', 'theme')
 ]);
+
+add_action( 'wp_ajax_get_skills_data', 'get_skills_data' );
+add_action( 'wp_ajax_nopriv_get_skills_data', 'get_skills_data' );
+
+function get_skills_data() {
+    $page = get_page_by_title('Skills');
+
+    $args = get_post_meta($page->ID);
+    $data = [];
+    foreach ($args as $key => $value) {
+        if (preg_match('#^[a-zA-Z]#', $key)) {
+            $data[] = [$key => $value[0]];
+        }
+    }
+    wp_send_json_success($data);
+}
