@@ -241,3 +241,32 @@ header li a {
   position: relative;
   right: 25px;
 }
+
+@media (max-width: 992px) {
+  #skills h1 {
+    margin-top: 25px;
+    text-align: center;
+  }
+
+  #skills img {
+    display: none;
+  }
+
+  #skills {
+    height: 900px;
+  }
+
+  .barre {
+    margin: 0 auto;
+  }
+
+  .block-barre {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .barre {
+    width: 90vw;
+  }
+}
