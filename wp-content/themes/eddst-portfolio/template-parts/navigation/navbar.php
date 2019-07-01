@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-md navbar-light" style="background-color: black;">
-    <h1 class="navbar-brand">Ed</h1>
+    <h1 class="navbar-brand"><?php echo get_post_meta(get_the_ID(), 'nickname', true) ?></h1>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>

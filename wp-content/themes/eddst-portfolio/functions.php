@@ -34,6 +34,7 @@ register_nav_menus([
     'weblink' => __('Web-link', 'theme')
 ]);
 
+// Ajax skills section
 add_action( 'wp_ajax_get_skills_data', 'get_skills_data' );
 add_action( 'wp_ajax_nopriv_get_skills_data', 'get_skills_data' );
 

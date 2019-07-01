@@ -2,7 +2,7 @@
 
 **This is my very first Wordpress Theme**
 
-## Start
+## Welcome
 
 * Create a homepage and set it as a static page
 * For adding section, create new pages and set the static page as parent
@@ -17,7 +17,7 @@
         * text: linkname
     * Select the location 'Navbar'
     
-### About section
+## About section
 
 * Add small description of you (text)
 * Add one thumbnail
@@ -28,13 +28,20 @@
         * text: the html code from fontawesome like this ```<i class="fab fa-twitter"></i>```
         * Select the location 'Weblink'
         
-### Skills section
+## Skills section
 
 * Add one thumbnail
 * Skills progression barre:
     * Add custom fields (6 Maximum)
     * Key: Name of skill
     * Value: number between 0 - 100
+    
+## Story section
+
+* Add one item:
+    * Add custom field (4 to optimal display)
+    * Key: the same name of the current page / section
+    * Value: add data like following example using ' / ' as delimiter: ```2017 / Main Title / Secondary Title```
 
 ## Infos
 
