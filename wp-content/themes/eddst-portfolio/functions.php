@@ -18,6 +18,8 @@ function load_js() {
     wp_register_script('jquery-migrate', get_template_directory_uri().'/assets/js/jquery-migrate.js', false, '3.4.1', true);
     wp_enqueue_script('jquery-core', get_template_directory_uri().'/assets/js/jquery.js', false, '3.4.1', true);
     wp_enqueue_script('jquery-migrate', get_template_directory_uri().'/assets/js/jquery-migrate.js', false, '3.4.1', true);
+    wp_register_script('bootstrap', get_template_directory_uri().'/assets/js/bootstrap/bootstrap.js');
+    wp_enqueue_script('bootstrap', get_template_directory_uri().'/assets/js/bootstrap/bootstrap.js', false, '4.0', true);
     wp_enqueue_script('skills', get_template_directory_uri().'/assets/js/skills.js', false, '1.0', true);
     wp_localize_script('skills', 'ajaxurl', [admin_url( 'admin-ajax.php' )]);
 }

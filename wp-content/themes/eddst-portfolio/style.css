@@ -346,3 +346,47 @@ header li a {
     margin-left: 0px;
   }
 }
+
+/************** WORK ***************/
+
+#work {
+  height: 950px;
+  background-color: #f7f7f7;
+}
+
+.work-img {
+  max-width: 33%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.work-img img {
+  width: 100%;
+  height: auto;
+  filter: grayscale(1);
+}
+
+.work-img img:hover {
+  filter: grayscale(0);
+}
+
+.pics-margin {
+  margin-top: 70px;
+}
+
+#work h1 {
+  font-family: "Catamaran Bold";
+  font-size: 48px;
+  color: black;
+  margin-top: 370px;
+}
+
+#work h1 span {
+  color: #d8ae3b;
+}
+
+@media (max-width: 992px) {
+  #work {
+    display: none;
+  }
+}
