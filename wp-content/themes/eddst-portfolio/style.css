@@ -356,15 +356,18 @@ header li a {
 
 .work-img {
   max-width: 33%;
-  height: auto;
+  height: 165px;
   margin-bottom: 15px;
+  overflow: hidden;
 }
 
 .work-img img {
   width: 100%;
   height: auto;
   filter: grayscale(1);
+  box-shadow: 0 2px 3px #ccc;
 }
+/*TODO Add same spacing between img and shadow*/
 
 .work-img img:hover {
   filter: grayscale(0);
@@ -385,8 +388,36 @@ header li a {
   color: #d8ae3b;
 }
 
+.modal-header, .modal-footer {
+  background-color: #212121;
+}
+
+.modal-header h5 {
+  font-family: "Gloria Hallelujah";
+  color: #d8ae3b;
+}
+
+.modal-header button {
+  color: whitesmoke;
+}
+
+.modal-header button:hover {
+  color: #d8ae3b;
+  text-shadow: none;
+}
+
+.modal-footer button:hover {
+  background-color: #d8ae3b;
+}
+
+.modal-body {
+  background-color: #f0f0f0;
+}
+
+.modal-body figure {
+  box-shadow: 0 2px 3px #ccc;
+}
+
 @media (max-width: 992px) {
-  #work {
-    display: none;
-  }
+
 }

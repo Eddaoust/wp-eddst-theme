@@ -12,15 +12,25 @@
                     foreach ($query->posts as $key => $post):
                         //var_dump($post);
                         ?>
-                        <div class="work-img col-4" id="img<?php echo $key + 1 ?>" data-toggle="modal" data-target=".bd-example-modal-x<?php echo $key + 1 ?>">
+                        <div class="work-img col-4" id="img<?php echo $key + 1 ?>" data-toggle="modal" data-target="#modalCenter<?php echo $key + 1 ?>">
                             <?php echo get_the_post_thumbnail($post->ID); ?>
                         </div>
 
-                        <div class="modal fade bd-example-modal-x<?php echo $key + 1 ?>" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-x<?php echo $key + 1 ?>">
+                        <div class="modal fade" id="modalCenter<?php echo $key + 1 ?>" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
                                 <div class="modal-content">
-                                    <h1>Hello</h1>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consequuntur cum cumque delectus dicta ea esse, eveniet ipsa iste laboriosam libero natus non nostrum officia quasi rerum sit tempore, ut.</p>
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="modalCenterTitle"><?php echo ucfirst($post->post_title); ?></h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <?php echo $post->post_content; ?>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
