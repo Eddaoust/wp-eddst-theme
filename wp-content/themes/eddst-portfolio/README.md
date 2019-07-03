@@ -42,6 +42,23 @@
     * Add custom field (4 to optimal display)
     * Key: the same name of the current page / section
     * Value: add data like following example using ' / ' as delimiter: ```2017 / Main Title / Secondary Title```
+    
+## Work section
+
+***This section present a small picture of one project, on click, open a modal with more info about it***
+
+* First, create an article category with the same name of the section
+* Next, to add one item, create an article
+    * Set the category to the previously created
+    * Add one thumbnail, this is the trigger to open modal
+    * Add the item title
+    * Add small description of the item (paragraph)
+    * Add list of notable thing (list)
+    * Add one image
+    * If you want adding a link to a Github account or Website:
+        * Add custom field
+        * Key: article_link
+        * Value: add data like following example using ' + ' as delimiter: ```Url + HTML code of font awesome or text```
 
 ## Infos
 

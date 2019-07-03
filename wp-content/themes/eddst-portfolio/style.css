@@ -357,8 +357,9 @@ header li a {
 .work-img {
   max-width: 33%;
   height: 165px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .work-img img {
@@ -367,7 +368,6 @@ header li a {
   filter: grayscale(1);
   box-shadow: 0 2px 3px #ccc;
 }
-/*TODO Add same spacing between img and shadow*/
 
 .work-img img:hover {
   filter: grayscale(0);
@@ -406,7 +406,7 @@ header li a {
   text-shadow: none;
 }
 
-.modal-footer button:hover {
+.modal-footer button:hover, .modal-footer a:hover {
   background-color: #d8ae3b;
 }
 
@@ -414,8 +414,20 @@ header li a {
   background-color: #f0f0f0;
 }
 
+.modal-body ul {
+  color: #919191;
+  font-size: 12px;
+
+}
+
 .modal-body figure {
-  box-shadow: 0 2px 3px #ccc;
+  box-shadow: 2px 2px 3px #ccc;
+}
+
+.modal-body p {
+  font-family: "Catamaran Regular";
+  text-align: justify;
+  font-size: 18px;
 }
 
 @media (max-width: 992px) {
