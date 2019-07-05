@@ -64,6 +64,11 @@
 
 * The mail is send to the admin email
 
+## Footer
+* Add personnal field to main homepage
+    * Key: phone
+    * Value: your phone number
+
 ## Infos
 
 * login: eddst

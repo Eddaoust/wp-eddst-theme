@@ -535,3 +535,80 @@ input:focus, textarea:focus {
     color: white;
   }
 }
+
+/************** FOOTER ***************/
+
+footer {
+  height: 400px;
+  background-color: #000;
+  padding-top: 80px;
+}
+
+footer h1 {
+  font-family: "Gloria Hallelujah";
+  color: #d8ae3b;
+  font-size: 48px;
+}
+
+footer h4 {
+  font-family: "Catamaran Regular";
+  font-size: 36px;
+  color: #919191;
+}
+
+footer p {
+  font-family: "Catamaran Regular";
+  font-size: 24px;
+  color: #919191;
+
+}
+
+footer a {
+  text-align: center;
+  font-size: 40px;
+  color: white;
+}
+
+footer a i {
+  width: 60px;
+  height: 60px;
+  background-color: #919191;
+  border-radius: 90px;
+  padding-top: 10px;
+  transition-duration: 0.5s;
+  transition-property: background-color;
+
+}
+
+footer a i:hover {
+  background-color: #d8ae3b;
+  color: white;
+}
+
+#menu-weblink-1 {
+  list-style-type: none;
+  padding: 0;
+}
+
+@media (max-width: 992px) {
+  footer {
+    height: 600px;
+    text-align: center;
+  }
+
+  footer h4 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    height: 700px;
+    padding-top: 0px;
+  }
+
+  footer .container-fluid .row {
+    flex-wrap: nowrap;
+  }
+}
