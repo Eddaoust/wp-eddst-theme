@@ -52,3 +52,25 @@ function get_skills_data() {
     }
     wp_send_json_success($data);
 }
+
+// Contact Form
+
+function handle_form() {
+    if (isset($_POST['name']) && isset($_POST['mail']) && isset($_POST['subject']) && isset($_POST['message'])) {
+        if (wp_verify_nonce($_POST['wp_nonce'], 'check_form')) {
+            $header = "MIME-Version: 1.0\r\n";
+            $header.= 'From:'.$_POST['name'].'<'.$_POST['mail'].'>'."\n";
+            $header.= 'Content-Type:text/html; charset="utf-8"'."\n";
+            $header.= 'Content-Transfert-Encoding: 8-bit';
+            if (mail(get_option('admin_email'), $_POST['subject'], $_POST['message'], $header)) {
+                $url = add_query_arg('status', 'send#contact', wp_get_referer());
+                wp_safe_redirect($url);
+            } else {
+                $url = add_query_arg('status', 'error#contact', wp_get_referer());
+                wp_safe_redirect($url);
+            }
+        }
+    }
+}
+
+add_action('template_redirect', 'handle_form');

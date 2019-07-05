@@ -350,7 +350,7 @@ header li a {
 /************** WORK ***************/
 
 #work {
-  height: 950px;
+  min-height: 650px;
   background-color: #f7f7f7;
 }
 
@@ -432,4 +432,106 @@ header li a {
 
 @media (max-width: 992px) {
 
+}
+
+/************** CONTACT ***************/
+
+#contact {
+  background-color: #000;
+}
+
+#img-back {
+  height: 700px;
+  background: url(assets/img/Calque_10.png)no-repeat center;
+  text-align: center;
+}
+
+#contact h1 {
+  font-family: "Catamaran Bold";
+  font-size: 48px;
+  color: #d8ae3b;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+#contact h1 span {
+  color: white;
+}
+
+#contact table {
+  margin: 0 auto;
+}
+
+.inputBasic {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  outline: none;
+  display: block;
+  width: 50vw;
+  padding: 7px;
+  opacity: 0.8;
+  border: none;
+  font-family: "Catamaran Regular";
+  font-size: 16px;
+  border-bottom: 1px solid #ddd;
+  background: #f0f0f0;
+  margin-bottom: 10px;
+  height: 45px;
+}
+
+#contact textarea {
+  height: 250px;
+  margin-bottom: 10px;
+  resize: none;
+}
+
+#submit {
+  text-align: center;
+}
+
+#button {
+  opacity: 0.8;
+  background-color: #d8ae3b;
+  color: white;
+  height: 50px;
+  width: 200px;
+  border: none;
+  transition-duration: 0.5s;
+  transition-property: opacity;
+}
+
+#button:hover {
+  opacity: 1;
+}
+
+input:focus, textarea:focus {
+  transition: border-left 0.5s ease;
+  border-bottom: solid 6px #d8ae3b;
+}
+
+#mail-send {
+  font-family: "Catamaran Bold";
+  font-size: 48px;
+  color: #d8ae3b;
+}
+
+@media (max-width: 992px) {
+  #contact textarea {
+    height: 15vh;
+  }
+}
+
+@media (max-width: 768px) {
+  #img-back {
+    height: 550px;
+    background: none;
+    text-align: center;
+  }
+
+  #button {
+    background-color: #d8ae3b;
+    width: 150px;
+    color: white;
+  }
 }
