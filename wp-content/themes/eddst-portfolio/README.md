@@ -59,6 +59,10 @@
         * Add custom field
         * Key: article_link
         * Value: add data like following example using ' + ' as delimiter: ```Url + HTML code of font awesome or text```
+        
+## Contact section
+
+* The mail is send to the admin email
 
 ## Infos
 
