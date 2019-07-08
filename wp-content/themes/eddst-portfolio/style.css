@@ -363,10 +363,10 @@ header li a {
 }
 
 .work-img img {
-  width: 100%;
-  height: auto;
   filter: grayscale(1);
   box-shadow: 0 2px 3px #ccc;
+  max-width: 100%;
+  height: auto;
 }
 
 .work-img img:hover {

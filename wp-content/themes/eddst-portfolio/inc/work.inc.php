@@ -15,7 +15,7 @@
                         ?>
                         <div class="work-img col-4" id="img<?php echo $key + 1 ?>" data-toggle="modal" data-target="#modalCenter<?php echo $key + 1 ?>">
                             <?php if (get_the_post_thumbnail($post->ID)): ?>
-                            <?php echo get_the_post_thumbnail($post->ID); ?>
+                            <?php echo get_the_post_thumbnail($post->ID, 'thumbnail'); ?>
                             <?php else: ?>
                             <img src="<?php echo get_template_directory_uri().'/assets/img/default.png'?>" alt="default">
                             <?php endif; ?>

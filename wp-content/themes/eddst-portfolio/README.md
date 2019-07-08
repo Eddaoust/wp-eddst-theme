@@ -48,6 +48,7 @@
 ***This section present a small picture of one project, on click, open a modal with more info about it***
 
 * First, create an article category with the same name of the section
+* Go to Settings > Media and set the thumnails width to 313 & height to 165
 * Next, to add one item, create an article
     * Set the category to the previously created
     * Add one thumbnail, this is the trigger to open modal
@@ -73,3 +74,4 @@
 
 * login: eddst
 * pass: eddst
+* Require Regenerate thumbnails extension
