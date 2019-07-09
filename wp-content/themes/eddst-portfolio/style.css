@@ -26,6 +26,12 @@ Description: Portfolio one page
   src: url("assets/fonts/catamaran/Catamaran-Thin.ttf");
 }
 
+/************** GENERAL ***************/
+
+body {
+  scroll-behavior: smooth;
+}
+
 /************** HEADER ***************/
 
 header nav h1 {
@@ -355,7 +361,7 @@ header li a {
 }
 
 .work-img {
-  max-width: 33%;
+  text-align: center;
   height: 165px;
   margin-bottom: 20px;
   overflow: hidden;
@@ -428,10 +434,6 @@ header li a {
   font-family: "Catamaran Regular";
   text-align: justify;
   font-size: 18px;
-}
-
-@media (max-width: 992px) {
-
 }
 
 /************** CONTACT ***************/

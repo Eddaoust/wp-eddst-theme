@@ -1,4 +1,4 @@
-<div id="work">
+<section id="work">
     <div class="container">
         <div class="row">
             <div class="pics-margin col-lg-10">
@@ -13,7 +13,7 @@
                         $link = get_post_meta($post->ID);
                         //var_dump($post);
                         ?>
-                        <div class="work-img col-4" id="img<?php echo $key + 1 ?>" data-toggle="modal" data-target="#modalCenter<?php echo $key + 1 ?>">
+                        <div class="work-img col-lg-4 col-sm-12" id="img<?php echo $key + 1 ?>" data-toggle="modal" data-target="#modalCenter<?php echo $key + 1 ?>">
                             <?php if (get_the_post_thumbnail($post->ID)): ?>
                             <?php echo get_the_post_thumbnail($post->ID, 'thumbnail'); ?>
                             <?php else: ?>
@@ -55,4 +55,4 @@
             </div>
         </div>
     </div>
-</div>
+</section>
