@@ -21,11 +21,11 @@
                             <?php endif; ?>
                         </div>
 
-                        <div class="modal fade" id="modalCenter<?php echo $key + 1 ?>" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitle" aria-hidden="true">
+                        <div class="modal fade" id="modalCenter<?php echo $key + 1 ?>" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitle<?php echo $key + 1 ?>" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="modalCenterTitle"><?php echo ucfirst($post->post_title); ?></h5>
+                                        <h5 class="modal-title" id="modalCenterTitle<?php echo $key + 1 ?>"><?php echo ucfirst($post->post_title); ?></h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
@@ -51,7 +51,7 @@
             </div>
             <div class="col-lg-1"></div>
             <div class="col-lg-1">
-                <h1>MY </br><span><?php echo strtoupper(get_the_title($section->ID)); ?></span></h1>
+                <h1>MY <br><span><?php echo strtoupper(get_the_title($section->ID)); ?></span></h1>
             </div>
         </div>
     </div>

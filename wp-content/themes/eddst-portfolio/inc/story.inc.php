@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-2 col-sm-12 col-xs-12">
-                <h1>MY </br><span><?php echo strtoupper(get_the_title($section->ID)); ?></span></h1>
+                <h1>MY <br><span><?php echo strtoupper(get_the_title($section->ID)); ?></span></h1>
             </div>
             <div class="col-lg-1"></div>
             <div class="col-lg-9 col-sm-12 col-xs-12">
