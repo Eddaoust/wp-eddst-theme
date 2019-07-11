@@ -32,6 +32,7 @@ add_theme_support('post-thumbnails');
 
 // Can choose the location in menu
 register_nav_menus([
+    'navbar_fr' =>__('Navbar', 'theme'),
     'navbar' => __('Navbar', 'theme'),
     'weblink' => __('Web-link', 'theme')
 ]);

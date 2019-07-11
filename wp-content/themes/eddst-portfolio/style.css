@@ -118,7 +118,7 @@ header li a {
   font-family: "Catamaran Regular";
   text-align: justify;
   font-size: 18px;
-  margin-top: 65px;
+  margin-top: 55px;
 }
 
 #about p:nth-of-type(2) {
@@ -129,7 +129,7 @@ header li a {
   font-family: "Gloria Hallelujah";
   font-size: 30px;
   padding-top: 60px;
-  margin-bottom: 280px;
+  margin-bottom: 180px;
 }
 
 #about h1 {
@@ -198,7 +198,7 @@ header li a {
   }
 
   #about {
-    height: 1000px;
+    height: 1100px;
   }
 }
 
