@@ -1,6 +1,6 @@
 <section id="work">
     <div class="container">
-        <div class="row">
+        <div class="row" id="work-wrapper">
             <div class="pics-margin col-lg-10">
                 <div class="row">
                     <?php
